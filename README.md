@@ -33,15 +33,15 @@ pass otp append -s -i CSCS cscs/<USERNAME>
 
 You have to set your username in the fuction `getCredentials()` in `cscs-mfa-helper.sh`.
 
-For more information about GnuPG, please refer to
-https://www.gnupg.org/gph/en/manual.html#INTRO
-For more information about `pass`, please refer to
+For more information about GnuPG, please refer to \
+https://www.gnupg.org/gph/en/manual.html#INTRO \
+For more information about `pass`, please refer to \
 https://www.passwordstore.org/
 
-If you already have TOTP set up in Google Authenticator, you can export the secret as a QR code. Then you can read the QR code with
-https://hub.docker.com/r/dwimberger/qr-api
-https://github.com/dwimberger/qr-api
-and then extract the secret from URI with
+If you already have TOTP set up in Google Authenticator, you can export the secret as a QR code. Then you can read the QR code with \
+https://hub.docker.com/r/dwimberger/qr-api \
+https://github.com/dwimberger/qr-api \
+and then extract the secret from URI with \
 https://github.com/krissrex/google-authenticator-exporter
 
 # Usage
