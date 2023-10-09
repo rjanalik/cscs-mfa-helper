@@ -3,7 +3,7 @@
 function getCredentials () {
   USERNAME="rjanalik"
   PASSWORD=$(pass cscs/$USERNAME)
-  read -s -p "Enter TOTP (6-digit code): " TOTP
+  TOTP=$(pass otp cscs/$USERNAME)
 }
 
 function needNewKey () {
