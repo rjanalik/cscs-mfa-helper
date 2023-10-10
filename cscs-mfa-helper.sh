@@ -2,7 +2,7 @@
 
 function getCredentials () {
   USERNAME="rjanalik"
-  PASSWORD=$(pass cscs/$USERNAME)
+  PASSWORD=$(pass cscs/$USERNAME | head -n1)
   TOTP=$(pass otp cscs/$USERNAME)
 }
 
